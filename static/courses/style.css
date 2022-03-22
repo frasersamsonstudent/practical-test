@@ -1,0 +1,22 @@
+body {
+    background-color: yellow;
+}
+
+.courseTitle {
+    font-weight: bold;
+    margin-bottom: 5px
+}
+
+.courseStartDate {
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+.courseDescription {
+}
+
+.coursesList {
+    padding-left: 40px;
+    list-style-type: none;
+}
+

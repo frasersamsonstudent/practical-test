@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Courses</title>
+
+        {% load static %}
+        <link
+                rel="stylesheet"
+                type="text/css" href="{% static 'courses/style.css' %}">
+    </head>
+
+    <body>
+        The list of courses provided by the GA program:
+
+        <div class="coursesContainer">
+            <ul class="coursesList">
+                {% for course in courses %}
+                    <li>
+                        <p>
+                        <h2 class="courseTitle">{{ course.title }}</h2>
+                            <p class="courseStartDate">Starting date: {{ course.start_date }}</p>
+                            <p class="courseDescription">{{ course.description }}</p>
+                        </p>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </body>
+</html>
